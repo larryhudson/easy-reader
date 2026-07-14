@@ -1,0 +1,24 @@
+[Unit]
+Description=Easy Reader API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=easy-reader
+Group=easy-reader
+WorkingDirectory=/opt/easy-reader/server
+EnvironmentFile=/etc/easy-reader.env
+Environment=PLAYWRIGHT_BROWSERS_PATH=/opt/easy-reader/.playwright
+Environment=PATH=/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/env npm start
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/easy-reader
+
+[Install]
+WantedBy=multi-user.target

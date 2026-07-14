@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C2BC40E4C46B75720671BA /* EasyReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EC6B4EFCA6A4BB262D57D5 /* EasyReaderApp.swift */; };
+		0D1F698545C26A8D6F5329E6 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50937C9986BA3B5FED4E9D9 /* PlayerModel.swift */; };
+		1AE7B9ADE6540DE6B71E9C0C /* EasyReaderShare.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9AD46908141F4E5736722F2B /* EasyReaderShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F21CBD92EE66D77EA0D0299 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF36FA439F1D3E41FCB9A230 /* Models.swift */; };
+		21DBE6B1756F9980E68C2F9C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2F33343E2BCEB06847F10A /* APIClient.swift */; };
+		50A5B0CE4EBE178C3A0F59D3 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98B6DB03C7D4F50EE9E246 /* LibraryModel.swift */; };
+		7D6E2624D7C597DAB0003B82 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E4D2E9DC757971F56530BD /* ShareViewController.swift */; };
+		F9E1B1BD45895ADF2AD16538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809CF10F8BEF8BD7DA1DCC2A /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5121DE215BE3637ABF0B0FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41D0273EA2F71C50D8D79AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C451EF1989B2E5FDEA4222E;
+			remoteInfo = EasyReaderShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C6AA9FA02AC9F9BE339481CA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1AE7B9ADE6540DE6B71E9C0C /* EasyReaderShare.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		316F660DF2B078EA2EF80B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		63F06C173BC3799EAC124C67 /* EasyReader.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = EasyReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6684A8765C18BCC31E92D534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6E9C0EB947C389DEF231DF39 /* EasyReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyReader.entitlements; sourceTree = "<group>"; };
+		7F0AB30A558706ED6A2FEC5F /* EasyReaderShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyReaderShare.entitlements; sourceTree = "<group>"; };
+		809CF10F8BEF8BD7DA1DCC2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AD46908141F4E5736722F2B /* EasyReaderShare.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = EasyReaderShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF36FA439F1D3E41FCB9A230 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C50937C9986BA3B5FED4E9D9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		CE2F33343E2BCEB06847F10A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D1EC6B4EFCA6A4BB262D57D5 /* EasyReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyReaderApp.swift; sourceTree = "<group>"; };
+		F2E4D2E9DC757971F56530BD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FE98B6DB03C7D4F50EE9E246 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		6F5477774DBDF756E16036C9 = {
+			isa = PBXGroup;
+			children = (
+				F32F555A3DA55BC2F99F45C3 /* EasyReader */,
+				AF7BF154EC30E63B293CE6AE /* EasyReaderShare */,
+				98107C877FD3AE36959C147C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98107C877FD3AE36959C147C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F06C173BC3799EAC124C67 /* EasyReader.app */,
+				9AD46908141F4E5736722F2B /* EasyReaderShare.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF7BF154EC30E63B293CE6AE /* EasyReaderShare */ = {
+			isa = PBXGroup;
+			children = (
+				7F0AB30A558706ED6A2FEC5F /* EasyReaderShare.entitlements */,
+				316F660DF2B078EA2EF80B13 /* Info.plist */,
+				F2E4D2E9DC757971F56530BD /* ShareViewController.swift */,
+			);
+			path = EasyReaderShare;
+			sourceTree = "<group>";
+		};
+		F32F555A3DA55BC2F99F45C3 /* EasyReader */ = {
+			isa = PBXGroup;
+			children = (
+				CE2F33343E2BCEB06847F10A /* APIClient.swift */,
+				809CF10F8BEF8BD7DA1DCC2A /* ContentView.swift */,
+				6E9C0EB947C389DEF231DF39 /* EasyReader.entitlements */,
+				D1EC6B4EFCA6A4BB262D57D5 /* EasyReaderApp.swift */,
+				6684A8765C18BCC31E92D534 /* Info.plist */,
+				FE98B6DB03C7D4F50EE9E246 /* LibraryModel.swift */,
+				BF36FA439F1D3E41FCB9A230 /* Models.swift */,
+				C50937C9986BA3B5FED4E9D9 /* PlayerModel.swift */,
+			);
+			path = EasyReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		107DDE9C01ECB77AC5D7C24A /* EasyReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953EC310A383598E549148DE /* Build configuration list for PBXNativeTarget "EasyReader" */;
+			buildPhases = (
+				5715B9A127C705724CFB6D30 /* Sources */,
+				C6AA9FA02AC9F9BE339481CA /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C878EC8A75593C2AD9CB1BF /* PBXTargetDependency */,
+			);
+			name = EasyReader;
+			packageProductDependencies = (
+			);
+			productName = EasyReader;
+			productReference = 63F06C173BC3799EAC124C67 /* EasyReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C451EF1989B2E5FDEA4222E /* EasyReaderShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1F81C46FAA1C0269D07537B /* Build configuration list for PBXNativeTarget "EasyReaderShare" */;
+			buildPhases = (
+				4BBC48F2AC2263EA24400C8F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyReaderShare;
+			packageProductDependencies = (
+			);
+			productName = EasyReaderShare;
+			productReference = 9AD46908141F4E5736722F2B /* EasyReaderShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41D0273EA2F71C50D8D79AD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					107DDE9C01ECB77AC5D7C24A = {
+						DevelopmentTeam = WM6HKLP7BJ;
+						ProvisioningStyle = Automatic;
+					};
+					9C451EF1989B2E5FDEA4222E = {
+						DevelopmentTeam = WM6HKLP7BJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 146410925555E65FF366BB28 /* Build configuration list for PBXProject "EasyReader" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6F5477774DBDF756E16036C9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 98107C877FD3AE36959C147C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				107DDE9C01ECB77AC5D7C24A /* EasyReader */,
+				9C451EF1989B2E5FDEA4222E /* EasyReaderShare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BBC48F2AC2263EA24400C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6E2624D7C597DAB0003B82 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5715B9A127C705724CFB6D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21DBE6B1756F9980E68C2F9C /* APIClient.swift in Sources */,
+				F9E1B1BD45895ADF2AD16538 /* ContentView.swift in Sources */,
+				09C2BC40E4C46B75720671BA /* EasyReaderApp.swift in Sources */,
+				50A5B0CE4EBE178C3A0F59D3 /* LibraryModel.swift in Sources */,
+				1F21CBD92EE66D77EA0D0299 /* Models.swift in Sources */,
+				0D1F698545C26A8D6F5329E6 /* PlayerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C878EC8A75593C2AD9CB1BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C451EF1989B2E5FDEA4222E /* EasyReaderShare */;
+			targetProxy = 5121DE215BE3637ABF0B0FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		49DBA187D5DB793FA1BEB1DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyReaderShare/EasyReaderShare.entitlements;
+				INFOPLIST_FILE = EasyReaderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryhudson.EasyReader.Share;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6079BEAB05EEEBE54D47E034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WM6HKLP7BJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		627C6355BE650B980A2C3730 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EasyReaderShare/EasyReaderShare.entitlements;
+				INFOPLIST_FILE = EasyReaderShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryhudson.EasyReader.Share;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B94556836DD087FF79A157C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WM6HKLP7BJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		E0E9E968B2924C8F904182B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyReader/EasyReader.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EasyReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryhudson.EasyReader;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED1928E2035568F02986053C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyReader/EasyReader.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EasyReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.larryhudson.EasyReader;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		146410925555E65FF366BB28 /* Build configuration list for PBXProject "EasyReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6079BEAB05EEEBE54D47E034 /* Debug */,
+				8B94556836DD087FF79A157C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		953EC310A383598E549148DE /* Build configuration list for PBXNativeTarget "EasyReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED1928E2035568F02986053C /* Debug */,
+				E0E9E968B2924C8F904182B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1F81C46FAA1C0269D07537B /* Build configuration list for PBXNativeTarget "EasyReaderShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627C6355BE650B980A2C3730 /* Debug */,
+				49DBA187D5DB793FA1BEB1DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41D0273EA2F71C50D8D79AD3 /* Project object */;
+}

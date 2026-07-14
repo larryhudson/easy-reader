@@ -1,0 +1,8 @@
+node_modules/
+.env
+.data/
+.build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+.DS_Store
+*.swp
