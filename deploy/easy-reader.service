@@ -9,6 +9,10 @@ User=easy-reader
 Group=easy-reader
 WorkingDirectory=/opt/easy-reader/server
 EnvironmentFile=/etc/easy-reader.env
+Environment=HOST=127.0.0.1
+Environment=PORT=8787
+Environment=DATA_DIR=/var/lib/easy-reader
+Environment=CODEX_PATH=/usr/local/bin/codex
 Environment=PLAYWRIGHT_BROWSERS_PATH=/opt/easy-reader/.playwright
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
 ExecStart=/usr/bin/env npm start
