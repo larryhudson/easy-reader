@@ -28,7 +28,7 @@ final class ShareViewController: UIViewController {
                   let url = try await provider.loadItem(forTypeIdentifier: UTType.url.identifier) as? URL else {
                 throw ShareError.missingURL
             }
-            let defaults = UserDefaults(suiteName: "group.com.larryhudson.EasyReader") ?? .standard
+            let defaults = UserDefaults(suiteName: "group.com.larryhudson.EasyReader")!
             let configuredServer = defaults.string(forKey: "serverURL")
             guard let configuredServer, !configuredServer.isEmpty,
                   let base = URL(string: configuredServer) else { throw ShareError.missingServer }

@@ -80,7 +80,7 @@ enum APIError: LocalizedError {
 }
 
 enum Settings {
-    private static let defaults = UserDefaults(suiteName: "group.com.larryhudson.EasyReader") ?? .standard
+    private static let defaults = UserDefaults(suiteName: "group.com.larryhudson.EasyReader")!
     static var serverURL: String {
         get { defaults.string(forKey: "serverURL") ?? "" }
         set { defaults.set(newValue.trimmingCharacters(in: CharacterSet(charactersIn: "/")), forKey: "serverURL") }

@@ -39,6 +39,9 @@ targets:
       - target: EasyReaderShare
     entitlements:
       path: EasyReader/EasyReader.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.larryhudson.EasyReader
   EasyReaderShare:
     type: app-extension
     platform: iOS
@@ -59,3 +62,6 @@ targets:
         SKIP_INSTALL: YES
     entitlements:
       path: EasyReaderShare/EasyReaderShare.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.larryhudson.EasyReader
